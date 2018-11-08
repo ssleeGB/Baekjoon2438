@@ -8,8 +8,20 @@
 
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+int main(void)
+{
+    int N, i, j;
+    
+    scanf("%d", &N);
+    
+    if(0<=N && N<=100)
+        for(i = 1; i<=N; i++)
+        {
+            for(j = 1; j <= i; j++)
+            {
+                printf("*");
+            }
+            printf("\n");
+        }
     return 0;
 }
